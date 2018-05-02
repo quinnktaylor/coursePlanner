@@ -1,3 +1,6 @@
 $(document).ready(function(){
-  console.log('Final Check');
+  $('.cs-heading-container').click(function(){
+    $('.cs-container').removeClass('cs-active');
+    $(this).parent().addClass('cs-active');
+  });
 });
