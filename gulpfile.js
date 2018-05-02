@@ -19,6 +19,6 @@ gulp.task('boom', ['sass'], function() {
     }
   });
 
-  gulp.watch(['*.html', 'styles/**/*.css', 'scripts/**/*.js'], {cwd: 'app'}, reload);
-  gulp.watch('app/css/scss/*.scss', ['sass']);
+  gulp.watch(['*.html', 'scripts/**/*.js'], {cwd: 'app'}, reload);
+  gulp.watch('app/css/scss/**/*.scss', ['sass']);
 });

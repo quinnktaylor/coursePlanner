@@ -1,11 +1,228 @@
 <html>
   <head>
-    <title>Gulp Boilerplate</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Course Planner</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/site.css">
     <script type="text/javascript" src="scripts/app.js"></script>
   </head>
+
   <body>
-    <h1>Welcome to my Gulp Boilerplate.</h1>
+    <div class="container">
+      <section class="course-header buffer-bottom">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-9 no-padding-right">
+                <h1>High-School Diploma 2017</h1>
+              </div>
+              <div class="col-md-3 no-padding-left">
+                <span class="course-header-text"><span class="text-highlight-primary">14</span> Credits Left!</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 offset-md-2">
+            <div class="row">
+              <div class="col-md-10 mt-auto no-padding-left">
+                <div class="progress">
+                  <div class="progress-bar progress-2" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="col-md-2 no-padding-left">
+                <span class="course-header-text alt"><span class="text-highlight-secondary">14</span> / 30</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="course-filter buffer-bottom">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-5 course-filter-dropdown">
+                <span class="course-filter-text">Requirements</span>
+                <div class="dropdown">
+                  <select class="dropdown-container">
+                    <option selected class="dropdown-item">Show All</option>
+                    <option class="dropdown-item">Let's try a longer name</option>
+                    <option class="dropdown-item">3</option>
+                    <option class="dropdown-item">4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-7 course-filter-options">
+                <span class="course-filter-text">Credits</span>
+                <ul class="course-filter-list">
+                  <li class="course-filter-list-item">
+                    <div class="custom-control custom-checkbox checkbox-primary">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">All</label>
+                    </div>
+                  </li>
+                  <li class="course-filter-list-item">
+                    <div class="custom-control custom-checkbox checkbox-primary">
+                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                      <label class="custom-control-label" for="customCheck2">Earned</label>
+                    </div>
+                  </li>
+                  <li class="course-filter-list-item">
+                    <div class="custom-control custom-checkbox checkbox-primary">
+                      <input type="checkbox" class="custom-control-input" id="customCheck3">
+                      <label class="custom-control-label" for="customCheck3">Planned</label>
+                    </div>
+                  </li>
+                  <li class="course-filter-list-item">
+                    <div class="custom-control custom-checkbox checkbox-primary">
+                      <input type="checkbox" class="custom-control-input" id="customCheck4">
+                      <label class="custom-control-label" for="customCheck4">Remaining</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="course-selection">
+        <div class="row no-padding">
+          <div class="col-md-3 cs-container">
+            <div class="cs-heading-container">
+              <h3 class="cs-heading mb-0">Year 9 <span class="cs-year-title">(Next Year)</span></h3>
+              <span class="cs-subheading">1 credit planned</span>
+            </div>
+            <div class="cs-list-container">
+              <ul class="cs-list">
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cs-footer-container text-center">
+              <button class="button btn-submit">Ready To Submit</button>
+            </div>
+          </div>
+          <div class="col-md-3 cs-container cs-active">
+            <div class="cs-heading-container">
+              <h3 class="cs-heading mb-0">Year 10</h3>
+              <span class="cs-subheading">0 credits earned</span>
+            </div>
+            <div class="cs-list-container">
+              <ul class="cs-list">
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cs-footer-container text-center">
+              <button class="button btn-submit">Ready To Submit</button>
+            </div>
+          </div>
+          <div class="col-md-3 cs-container">
+            <div class="cs-heading-container">
+              <h3 class="cs-heading mb-0">Year 11</h3>
+              <span class="cs-subheading">0 credits earned</span>
+            </div>
+            <div class="cs-list-container">
+              <ul class="cs-list">
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cs-footer-container text-center">
+              <button class="button btn-submit">Ready To Submit</button>
+            </div>
+          </div>
+          <div class="col-md-3 cs-container">
+            <div class="cs-heading-container">
+              <h3 class="cs-heading mb-0">Year 12</h3>
+              <span class="cs-subheading">0 credits earned</span>
+            </div>
+            <div class="cs-list-container">
+              <ul class="cs-list">
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+                <li class="cs-list-item">
+                  <span>Available Slot</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cs-footer-container text-center">
+              <button class="button btn-submit">Ready To Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
+
 </html>

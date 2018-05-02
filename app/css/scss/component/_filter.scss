@@ -1,0 +1,92 @@
+.course-filter {
+	background: $color-gray-primary;
+	border: 1px solid $color-gray-secondary;
+	border-radius: $radius-1;
+	padding: 0rem $filter-spacing-small;
+	min-height: $filter-height; //Will keep height consistent at 45px in the event that dropdown is ever removed.
+}
+
+.course-filter-text {
+	color: $color-gray-alt;
+	font-size: $body-text-sm - .10rem;
+}
+
+.course-filter-dropdown {
+	min-height: $filter-height;
+	@extend .flex-vertical-center;
+	padding-right: 1.75rem;
+
+	.dropdown {
+		margin-left: $filter-spacing-small;
+		width: 100%;
+		display: block;
+		display: flex;
+  	justify-content: center;
+  	align-items: center;
+		//Based off CSS Chevrons by Jonathan Neal
+		&:after {
+			content: '';
+			border-style: solid;
+			border-width: 1px 1px 0 0;
+			border-color: $color-gray-alt;
+			position: absolute;
+			margin-top: -2px;
+			right: 15px;
+			width: 0.45em;
+			height: 0.45em;
+			transform: rotate(135deg);
+			pointer-events: none;
+		}
+	}
+}
+
+.dropdown-container {
+	display: block;
+	width: 100%;
+	padding: .25rem 1.25rem .25rem .50rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	@extend .course-filter-text;
+	border: 1px solid $color-gray-secondary;
+	border-radius: $radius-1;
+	cursor: pointer;
+
+	&::-ms-expand {
+    display: none; /* hide the default arrow in ie10 and ie11 */
+	}
+}
+
+.course-filter-options {
+	padding-left: 1.75rem;
+	min-height: $filter-height;
+	@extend .flex-vertical-center;
+
+	&:before {
+		content: '';
+		width: 1px;
+		background-color: $color-gray-secondary;
+		height: 70%;
+		position: absolute;
+		left: 0;
+	}
+}
+
+.course-filter-list {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: $filter-spacing-left;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.course-filter-list-item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: $filter-spacing-small;
+	@extend .course-filter-text;
+
+	&:first-of-type {
+		margin-left: 0;
+	}
+}
