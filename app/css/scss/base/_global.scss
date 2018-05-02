@@ -1,0 +1,45 @@
+body {
+	font-family: $font-primary;
+	font-size: $font-size-base;
+	color: $text-color-primary;
+	background-color: $body-color;
+	padding: $body-padding;
+}
+
+h1 {
+	font-size: $body-text-lrg;
+	font-weight: $bold;
+}
+
+h3 {
+	font-size: $body-text-md;
+	font-weight: $bold;
+}
+
+.checkbox-primary {
+	.custom-control-label {
+		margin-left: $filter-spacing-left/4;
+		&:before {
+			width: $checkbox-dimensions;
+			height: $checkbox-dimensions;
+			background-color: $color-white;
+			border: 1px solid $color-gray-secondary;
+			top: .10rem;
+		}
+		&:after {
+			width: $checkbox-dimensions;
+			height: $checkbox-dimensions;
+			top: .10rem;
+		}
+	}
+}
+
+.btn-submit {
+	color: $color-white;
+	background: $color-blue-secondary;
+	-webkit-appearance: none;
+	border: 0;
+	cursor: pointer;
+	padding: 0.5rem 0.75rem;
+	border-radius: $radius-2;
+}

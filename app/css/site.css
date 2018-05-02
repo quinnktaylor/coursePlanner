@@ -1,49 +1,247 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900");
+/* Media queries - Mobile First Example
+  @media (min-width: tablet) {
+    float: left;
+    width: 60%;
+  } */
+.text-highlight-primary {
+  background-color: #d03b5b;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 2px 0 0 3px; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+.text-highlight-secondary {
+  color: #46811b;
+  font-weight: 900; }
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.align-right {
+  right: 0; }
+
+.buffer-bottom {
+  margin-bottom: 1.75rem; }
+
+.flex-vertical-center, .course-filter-dropdown, .course-filter-options {
+  display: flex;
+  align-items: center; }
+
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.no-padding-right {
+  padding-right: 0 !important; }
+
+.no-padding-left {
+  padding-left: 0 !important; }
 
 body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #484848;
+  background-color: #fafafa;
+  padding: 3rem 0; }
 
 h1 {
-  font-size: 40px; }
+  font-size: 1.75rem;
+  font-weight: 900; }
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 900; }
+
+.checkbox-primary .custom-control-label {
+  margin-left: 0.4375rem; }
+  .checkbox-primary .custom-control-label:before {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    top: .10rem; }
+  .checkbox-primary .custom-control-label:after {
+    width: 1.25rem;
+    height: 1.25rem;
+    top: .10rem; }
+
+.btn-submit {
+  color: #fff;
+  background: #137cad;
+  -webkit-appearance: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px; }
+
+.progress {
+  background: transparent;
+  border: 2px solid #e6e6e6;
+  box-shadow: none;
+  margin-bottom: 0; }
+
+.progress-bar {
+  background-color: #84c131; }
+
+.progress-1 {
+  width: 25%; }
+
+.progress-2 {
+  width: 50%; }
+
+.progress-3 {
+  width: 75%; }
+
+.progress-4 {
+  width: 100%; }
+
+.course-header {
+  display: block; }
+
+.course-header-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 5px; }
+  .course-header-text.alt {
+    margin-top: 8px;
+    display: block;
+    text-align: right; }
+
+.course-filter {
+  background: #f1f1f1;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 0rem 1.25rem;
+  min-height: 2.8rem; }
+
+.course-filter-text, .dropdown-container, .course-filter-list-item {
+  color: #7e7e7e;
+  font-size: 0.9rem; }
+
+.course-filter-dropdown {
+  min-height: 2.8rem;
+  padding-right: 1.75rem; }
+  .course-filter-dropdown .dropdown {
+    margin-left: 1.25rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .course-filter-dropdown .dropdown:after {
+      content: '';
+      border-style: solid;
+      border-width: 1px 1px 0 0;
+      border-color: #7e7e7e;
+      position: absolute;
+      margin-top: -2px;
+      right: 15px;
+      width: 0.45em;
+      height: 0.45em;
+      transform: rotate(135deg);
+      pointer-events: none; }
+
+.dropdown-container {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.25rem .25rem .50rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  cursor: pointer; }
+  .dropdown-container::-ms-expand {
+    display: none;
+    /* hide the default arrow in ie10 and ie11 */ }
+
+.course-filter-options {
+  padding-left: 1.75rem;
+  min-height: 2.8rem; }
+  .course-filter-options:before {
+    content: '';
+    width: 1px;
+    background-color: #cccccc;
+    height: 70%;
+    position: absolute;
+    left: 0; }
+
+.course-filter-list {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.75rem;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+.course-filter-list-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.25rem; }
+  .course-filter-list-item:first-of-type {
+    margin-left: 0; }
+
+.cs-container:first-of-type {
+  padding-left: 0; }
+.cs-container:last-of-type {
+  padding-right: 0; }
+
+.cs-heading-container {
+  padding-top: 1rem;
+  padding-bottom: 1.25rem; }
+  .cs-active .cs-heading-container {
+    background: #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 1rem 1rem 0.5rem 1rem; }
+
+.cs-active {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding-left: 0;
+  padding-right: 0; }
+
+.cs-heading {
+  text-transform: uppercase; }
+
+.cs-subheading {
+  font-size: 0.75rem; }
+
+.cs-list {
+  margin-left: 0;
+  padding-left: 0; }
+
+.cs-year-title {
+  text-transform: none; }
+
+.cs-list-item {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #afafaf;
+  list-style-type: none;
+  border: 1px dashed #cccccc;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer; }
+  .cs-active .cs-list-item {
+    margin: 0.70rem 1rem 0.75rem 1rem; }
+
+.cs-footer-container {
+  display: none;
+  background-color: #31b0dd;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 100%;
+  padding: 1.5rem 1rem; }
+  .cs-active .cs-footer-container {
+    display: block; }
+  .cs-footer-container button {
+    border: 2px solid #31b0dd;
+    box-shadow: 0 0 0 0px #31b0dd, 0 0 0 2px #137cad; }

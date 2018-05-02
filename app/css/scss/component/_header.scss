@@ -1,0 +1,16 @@
+.course-header {
+	display: block;
+}
+
+.course-header-text {
+	font-size: $body-text-sm - .10rem;
+	font-weight: $light;
+	display: inline-block;
+	margin-top: 5px;
+
+	&.alt {
+		margin-top: 8px;
+		display: block;
+		text-align: right;
+	}
+}
