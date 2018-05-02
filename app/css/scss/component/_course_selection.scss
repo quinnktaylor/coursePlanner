@@ -110,6 +110,7 @@
 
 	.add-subject-title {
 		display: block;
+		margin-bottom: -3px; //Me being nitpicky. Offsetting space added with font rendering.
 	}
 }
 
@@ -141,8 +142,84 @@
 .selected-course-code {
 	text-transform: uppercase;
 	color: $text-color-primary;
+	display: block;
 	span {
 		text-transform: none;
 		color: $color-gray-secondary;
 	}
+}
+
+.selected-course-details {
+
+}
+
+.selected-course-error {
+	color: $color-error;
+	font-size: $body-text-sm;
+	position: relative;
+	cursor: pointer;
+
+	&:hover {
+		.selected-course-error-popup {
+			display: block;
+		}
+	}
+
+	.selected-course-error-popup {
+		display: none;
+		position: absolute;
+		padding: $spacer;
+		font-family: $font-primary;
+		font-size: $body-text-xs-sm;
+		background: $color-white;
+		color: $color-gray-alt;
+		-webkit-box-shadow: 2px 2px 4px 1px #f1f1f1;
+		box-shadow: 2px 2px 4px 1px #f1f1f1;
+		width: 250px;
+		top: -75px;
+		left: -225px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 10px;
+			height: 100%;
+			background: $color-error;
+			border-top-left-radius: $radius-1;
+			border-bottom-left-radius: $radius-1;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			right: 7px;
+			bottom: -7px;
+			width: 0;
+			height: 0;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-top: 10px solid $color-white;
+			-webkit-box-shadow: 2px 2px 4px 1px #f1f1f1;
+			box-shadow: 2px 2px 4px 1px #f1f1f1;
+		}
+	}
+
+	&:after {
+		content: '';
+		background: transparent;
+		border: 1px solid #994e5e;
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: -1px;
+		top: 1px;
+		border-radius: 50%;
+	}
+}
+
+.selected-course-error-link {
+	display: block;
+	margin-top: $spacer/2;
 }

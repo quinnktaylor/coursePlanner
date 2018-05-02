@@ -100,7 +100,8 @@ h3 {
   background: transparent;
   border: 2px solid #e6e6e6;
   box-shadow: none;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  height: 1.5rem; }
 
 .progress-bar {
   background-color: #84c131; }
@@ -284,7 +285,8 @@ h3 {
     height: 100%;
     max-height: 43px; }
   .cs-list-item .add-subject-title {
-    display: block; }
+    display: block;
+    margin-bottom: -3px; }
 
 .cs-footer-container {
   display: none;
@@ -305,7 +307,65 @@ h3 {
 
 .selected-course-code {
   text-transform: uppercase;
-  color: #484848; }
+  color: #484848;
+  display: block; }
   .selected-course-code span {
     text-transform: none;
     color: #cccccc; }
+
+.selected-course-error {
+  color: #fc476e;
+  font-size: 1rem;
+  position: relative;
+  cursor: pointer; }
+  .selected-course-error:hover .selected-course-error-popup {
+    display: block; }
+  .selected-course-error .selected-course-error-popup {
+    display: none;
+    position: absolute;
+    padding: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+    background: #fff;
+    color: #7e7e7e;
+    -webkit-box-shadow: 2px 2px 4px 1px #f1f1f1;
+    box-shadow: 2px 2px 4px 1px #f1f1f1;
+    width: 250px;
+    top: -75px;
+    left: -225px; }
+    .selected-course-error .selected-course-error-popup:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 100%;
+      background: #fc476e;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
+    .selected-course-error .selected-course-error-popup:after {
+      content: '';
+      position: absolute;
+      right: 7px;
+      bottom: -7px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #fff;
+      -webkit-box-shadow: 2px 2px 4px 1px #f1f1f1;
+      box-shadow: 2px 2px 4px 1px #f1f1f1; }
+  .selected-course-error:after {
+    content: '';
+    background: transparent;
+    border: 1px solid #994e5e;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: -1px;
+    top: 1px;
+    border-radius: 50%; }
+
+.selected-course-error-link {
+  display: block;
+  margin-top: 0.5rem; }

@@ -1,7 +1,9 @@
 <html>
   <head>
     <title>Course Planner</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/site.css">
     <script type="text/javascript" src="scripts/app.js"></script>
   </head>
@@ -99,7 +101,7 @@
                         <span class="selected-course-code">ENG1P1 <span>| English 9</span></span>
                       </div>
                     </div>
-                    <div class="col-md-3 selected-course-details mt-auto">
+                    <div class="col-md-3 selected-course-details text-right mt-auto">
                       <span class="selected-course-code"><span>1cr</span></span>
                     </div>
                   </div>
@@ -112,7 +114,13 @@
                         <span class="selected-course-code">MAT1U1 <span>| Math 9</span></span>
                       </div>
                     </div>
-                    <div class="col-md-3 selected-course-details mt-auto">
+                    <div class="col-md-3 selected-course-details text-right mt-auto">
+                      <span class="selected-course-error fa fa-exclamation-circle" aria-hidden="true">
+                        <div class="selected-course-error-popup text-left">
+                          <span>This course requires a prerequisite</span>
+                          <a href="#" class="selected-course-error-link">Add one.</a>
+                        </div>
+                      </span>
                       <span class="selected-course-code"><span>1cr</span></span>
                     </div>
                   </div>
@@ -219,8 +227,24 @@
             </div>
             <div class="cs-list-container">
               <ul class="cs-list">
-                <li class="cs-list-item">
-                  <span>Available Slot</span>
+                <li class="cs-list-item selected">
+                  <div class="row">
+                    <div class="col-md-9 selected-course-name">
+                      <div class="selected-course-wrapper">
+                        <span class="selected-course-title">English</span>
+                        <span class="selected-course-code">ENG1P1 <span>| English 9</span></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 selected-course-details text-right mt-auto">
+                      <span class="selected-course-error fa fa-exclamation-circle" aria-hidden="true">
+                        <div class="selected-course-error-popup text-left">
+                          <span>This course requires a prerequisite</span>
+                          <a href="#" class="selected-course-error-link">Add one.</a>
+                        </div>
+                      </span>
+                      <span class="selected-course-code"><span>1cr</span></span>
+                    </div>
+                  </div>
                 </li>
                 <li class="cs-list-item">
                   <span>Available Slot</span>
@@ -268,8 +292,18 @@
                 <li class="cs-list-item">
                   <span>Available Slot</span>
                 </li>
-                <li class="cs-list-item">
-                  <span>Available Slot</span>
+                <li class="cs-list-item add">
+                  <div class="row no-padding">
+                    <div class="col-md-2 add-icon">
+                      <span>+</span>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="relative-center">
+                        <span class="add-subject-title text-add">Add Accounting</span>
+                        <span class="text-sm">1cr.</span>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li class="cs-list-item">
                   <span>Available Slot</span>
