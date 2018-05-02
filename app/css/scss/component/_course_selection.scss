@@ -172,7 +172,7 @@
 		-webkit-box-shadow: 2px 2px 4px 1px #f1f1f1;
 		box-shadow: 2px 2px 4px 1px #f1f1f1;
 		width: 250px;
-		top: -75px;
+		top: -70px;
 		left: -225px;
 
 		&:before {
@@ -197,8 +197,6 @@
 			border-left: 10px solid transparent;
 			border-right: 10px solid transparent;
 			border-top: 10px solid $color-white;
-			-webkit-box-shadow: 2px 2px 4px 1px #f1f1f1;
-			box-shadow: 2px 2px 4px 1px #f1f1f1;
 		}
 	}
 
@@ -216,6 +214,6 @@
 }
 
 .selected-course-error-link {
-	display: block;
+	display: inline-block;
 	margin-top: $spacer/2;
 }
