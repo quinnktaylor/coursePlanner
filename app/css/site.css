@@ -180,8 +180,7 @@ h3 {
     /* hide the default arrow in ie10 and ie11 */ }
 
 .course-filter-options {
-  padding-left: 1.75rem;
-  min-height: 2.8rem; }
+  padding-left: 1.75rem; }
   .course-filter-options:before {
     content: '';
     width: 1px;
