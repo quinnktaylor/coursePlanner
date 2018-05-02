@@ -20,6 +20,13 @@
   transform: translateY(-50%);
 }
 
+.relative-center {
+	position: relative;
+	top: 50%;
+	left: 0;
+	transform: translate(0%, -50%);
+}
+
 .align-right {
 	right: 0;
 }
@@ -44,4 +51,12 @@
 
 .no-padding-left {
    padding-left: 0 !important;
+}
+
+.text-sm {
+	font-size: $body-text-xs-sm;
+}
+
+.text-add {
+	color: $color-blue-primary;
 }

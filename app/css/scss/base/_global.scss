@@ -43,3 +43,9 @@ h3 {
 	padding: 0.5rem 0.75rem;
 	border-radius: $radius-2;
 }
+
+//overwriting vendor style for Bootstrap Checboxes
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+	background-color: $color-green-primary;
+	border-radius: .25rem;
+}
