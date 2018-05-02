@@ -61,15 +61,8 @@
 	padding-left: 1.75rem;
 	min-height: $filter-height;
 	@extend .flex-vertical-center;
-
-	&:before {
-		content: '';
-		width: 1px;
-		background-color: $color-gray-secondary;
-		height: 70%;
-		position: absolute;
-		left: 0;
-	}
+	border-left: 1px solid $color-gray-secondary;
+	margin: 0.75rem 0;
 }
 
 .course-filter-list {

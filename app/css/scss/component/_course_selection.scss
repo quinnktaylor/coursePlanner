@@ -199,18 +199,6 @@
 			border-top: 10px solid $color-white;
 		}
 	}
-
-	&:after {
-		content: '';
-		background: transparent;
-		border: 1px solid #994e5e;
-		position: absolute;
-		width: 15px;
-		height: 15px;
-		left: -1px;
-		top: 1px;
-		border-radius: 50%;
-	}
 }
 
 .selected-course-error-link {
