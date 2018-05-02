@@ -180,14 +180,9 @@ h3 {
     /* hide the default arrow in ie10 and ie11 */ }
 
 .course-filter-options {
-  padding-left: 1.75rem; }
-  .course-filter-options:before {
-    content: '';
-    width: 1px;
-    background-color: #cccccc;
-    height: 70%;
-    position: absolute;
-    left: 0; }
+  padding-left: 1.75rem;
+  border-left: 1px solid #cccccc;
+  margin: 0.75rem 0; }
 
 .course-filter-list {
   display: inline-block;
@@ -352,16 +347,6 @@ h3 {
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
       border-top: 10px solid #fff; }
-  .selected-course-error:after {
-    content: '';
-    background: transparent;
-    border: 1px solid #994e5e;
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: -1px;
-    top: 1px;
-    border-radius: 50%; }
 
 .selected-course-error-link {
   display: inline-block;
