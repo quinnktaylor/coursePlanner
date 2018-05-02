@@ -249,9 +249,9 @@ h3 {
   padding: 0.75rem;
   margin-bottom: 0.75rem;
   cursor: pointer;
-  max-height: 45px; }
+  height: 45px; }
   .cs-active .cs-list-item {
-    margin: 0.76rem 1rem 0.75rem 1rem;
+    margin: 0.68rem 1rem 0.75rem 1rem;
     cursor: default; }
   .cs-list-item.add {
     padding: 0;
