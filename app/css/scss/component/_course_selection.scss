@@ -1,7 +1,5 @@
 .cs-container {
-	&:first-of-type {
-		padding-left: 0;
-	}
+	border: 1px solid transparent;
 
 	&:last-of-type {
 		padding-right: 0;
@@ -11,12 +9,14 @@
 .cs-heading-container {
 	padding-top: $spacer * 1;
 	padding-bottom: $spacer * 1.25;
+	cursor: pointer;
 
 	.cs-active & {
 		background: $color-gray-primary;
 		border-top-left-radius: $radius-1;
 		border-top-right-radius: $radius-1;
 		padding: $spacer $spacer 0.50rem $spacer;
+		cursor: default;
 	}
 }
 
