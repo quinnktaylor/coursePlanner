@@ -23,6 +23,12 @@
   top: 50%;
   transform: translateY(-50%); }
 
+.relative-center {
+  position: relative;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%); }
+
 .align-right {
   right: 0; }
 
@@ -42,6 +48,12 @@
 
 .no-padding-left {
   padding-left: 0 !important; }
+
+.text-sm {
+  font-size: 0.75rem; }
+
+.text-add {
+  color: #31b0dd; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -79,6 +91,10 @@ h3 {
   cursor: pointer;
   padding: 0.5rem 0.75rem;
   border-radius: 6px; }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #84c131;
+  border-radius: .25rem; }
 
 .progress {
   background: transparent;
@@ -205,7 +221,9 @@ h3 {
   border: 1px solid #cccccc;
   border-radius: 4px;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  -webkit-box-shadow: 2px 2px 4px 1px #f1f1f1;
+  box-shadow: 2px 2px 4px 1px #f1f1f1; }
 
 .cs-heading {
   text-transform: uppercase; }
@@ -221,7 +239,7 @@ h3 {
   text-transform: none; }
 
 .cs-list-item {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   font-weight: 400;
   color: #afafaf;
   list-style-type: none;
@@ -229,9 +247,44 @@ h3 {
   border-radius: 4px;
   padding: 0.75rem;
   margin-bottom: 0.75rem;
-  cursor: pointer; }
+  cursor: pointer;
+  max-height: 45px; }
   .cs-active .cs-list-item {
-    margin: 0.70rem 1rem 0.75rem 1rem; }
+    margin: 0.76rem 1rem 0.75rem 1rem;
+    cursor: default; }
+  .cs-list-item.add {
+    padding: 0;
+    border: 1px solid #cccccc; }
+  .cs-list-item.selected {
+    border: 1px solid #cccccc;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.5rem;
+    position: relative; }
+    .cs-list-item.selected:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 100%;
+      background: #84c131;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
+  .cs-list-item .selected-course-name {
+    padding-left: 1.5rem; }
+  .cs-list-item .add-icon {
+    padding: 0.08rem 0.75rem;
+    font-size: 1.75rem;
+    background-color: #31b0dd;
+    color: white;
+    cursor: pointer;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 100%;
+    max-height: 43px; }
+  .cs-list-item .add-subject-title {
+    display: block; }
 
 .cs-footer-container {
   display: none;
@@ -245,3 +298,14 @@ h3 {
   .cs-footer-container button {
     border: 2px solid #31b0dd;
     box-shadow: 0 0 0 0px #31b0dd, 0 0 0 2px #137cad; }
+
+.selected-course-title {
+  display: block;
+  color: #484848; }
+
+.selected-course-code {
+  text-transform: uppercase;
+  color: #484848; }
+  .selected-course-code span {
+    text-transform: none;
+    color: #cccccc; }
