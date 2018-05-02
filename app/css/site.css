@@ -331,7 +331,7 @@ h3 {
     -webkit-box-shadow: 2px 2px 4px 1px #f1f1f1;
     box-shadow: 2px 2px 4px 1px #f1f1f1;
     width: 250px;
-    top: -75px;
+    top: -70px;
     left: -225px; }
     .selected-course-error .selected-course-error-popup:before {
       content: '';
@@ -352,9 +352,7 @@ h3 {
       height: 0;
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
-      border-top: 10px solid #fff;
-      -webkit-box-shadow: 2px 2px 4px 1px #f1f1f1;
-      box-shadow: 2px 2px 4px 1px #f1f1f1; }
+      border-top: 10px solid #fff; }
   .selected-course-error:after {
     content: '';
     background: transparent;
@@ -367,5 +365,5 @@ h3 {
     border-radius: 50%; }
 
 .selected-course-error-link {
-  display: block;
+  display: inline-block;
   margin-top: 0.5rem; }
