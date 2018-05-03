@@ -314,6 +314,11 @@ h3 {
   cursor: pointer; }
   .selected-course-error:hover .selected-course-error-popup {
     display: block; }
+  .selected-course-error .selected-course-error-border {
+    font-size: 1rem;
+    color: #812338;
+    left: 0;
+    top: 0; }
   .selected-course-error .selected-course-error-popup {
     display: none;
     position: absolute;
@@ -322,13 +327,13 @@ h3 {
     font-size: 0.75rem;
     background: #fff;
     color: #7e7e7e;
-    -webkit-box-shadow: 2px 2px 4px 1px #f1f1f1;
-    box-shadow: 2px 2px 4px 1px #f1f1f1;
+    -webkit-box-shadow: 1px 1px 1px 1px #A8A8A8;
+    box-shadow: 1px 1px 1px 1px #A8A8A8;
+    border-radius: 4px;
     width: 250px;
-    top: -70px;
-    left: -225px; }
-    .selected-course-error .selected-course-error-popup:before {
-      content: '';
+    top: -74px;
+    left: -226px; }
+    .selected-course-error .selected-course-error-popup .selected-course-error-strip {
       position: absolute;
       top: 0;
       left: 0;
@@ -337,11 +342,21 @@ h3 {
       background: #fc476e;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px; }
+    .selected-course-error .selected-course-error-popup:before {
+      content: '';
+      position: absolute;
+      right: 7px;
+      bottom: -11px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #cccccc; }
     .selected-course-error .selected-course-error-popup:after {
       content: '';
       position: absolute;
       right: 7px;
-      bottom: -7px;
+      bottom: -10px;
       width: 0;
       height: 0;
       border-left: 10px solid transparent;
