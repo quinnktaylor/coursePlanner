@@ -1,79 +1,77 @@
 /* ----------- */
+
 /* Page header */
+
 /* ----------- */
-
 .page-header {
-  display: flex;
-  align-items: center;
+	align-items: center;
+	display: flex;
 	margin-bottom: 20px;
-}
 
-.page-header__h1 {
-  font-size: 23px;
-  font-weight: 600;
-  color: #484848;
-  margin-right: 22px;
-	margin-bottom: 0;
+	&__h1 {
+		color: $text-color-primary;
+		font-size: $body-text-lrg;
+		font-weight: $medium;
+		margin-bottom: 0;
+		margin-right: 22px;
+	}
 }
 
 .credits {
-  display: flex;
-  align-items: center;
-}
-
-.credits__count {
-  width: 22px;
-  height: 22px;
-  background: #d03b5b;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  color: #fff;
-  margin-right: 5px;
-}
-
-.credits__label {
-  font-size: 13px;
-  color: #737373;
-}
-
-.progression {
-  margin-left: auto;
-  display: flex;
 	align-items: center;
-}
+	display: flex;
 
-.progression__bar {
-  border: 2px solid #e1e1e1;
-  width: 200px;
-  height: 26px;
-  border-radius: 4px;
-  position: relative;
-}
+	&__count {
+		font-size: $body-text-xs-sm;
+		background: $color-highlight-primary;
+		border-radius: 100%;
+		color: $color-white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 5px;
+		width: 22px;
+		height: 22px;
+	}
 
-.progression__bar__fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #83c131;
-  width: 50%;
-  height: 100%;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-}
+	&__label {
+		color: $color-gray-alt;
+		font-size: $body-text-sm;
+	}
 
-.progression__bar__fill--full {
-  border-radius: 2px;
 }
+.progression {
+	align-items: center;
+	display: flex;
+	margin-left: auto;
 
-.progression__status {
-	font-size: 12px;
-	margin-left: 10px;
-}
+	&__bar {
+		border: 2px solid #e1e1e1;
+		border-radius: 4px;
+		height: 26px;
+		position: relative;
+		width: 200px;
+		&__fill {
+			background: $color-green-primary;
+			border-bottom-left-radius: 2px;
+			border-top-left-radius: 2px;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 50%;
+			&--full {
+				border-radius: 2px;
+			}
+		}
+	}
 
-.progression__status--remaining {
-	color: #83c131;
-	font-weight: bold;
+	&__status {
+		font-size: $body-text-sm;
+		margin-left: 10px;
+		&--remaining {
+			color: $color-green-primary;
+			font-weight: bold;
+		}
+	}
 }

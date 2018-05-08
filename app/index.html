@@ -8,7 +8,7 @@
       <script type="text/javascript" src="scripts/app.js"></script>
    </head>
    <body>
-      <div class="container">
+      <div class="container-fluid">
          <header class="page-header">
             <h1 class="page-header__h1">High-School Diploma 2017</h1>
             <div class="credits">
@@ -78,71 +78,160 @@
          </section>
          <section class="course-selection">
             <div class="row">
-               <div class="col col-sm-12 col-md-3">
-                  <div class="">
-                  </div>
-                  <div class="course-tab course-tab--active">
-                     <div class="course-tab__left">
-                        <div class="course-name">English</div>
-                        <div class="course-details">
-                           <div class="course-details__item">ENG1PI</div>
-                           <div class="course-details__item course-details__item--light">English 9</div>
+               <div class="col-sm-12 col-md-3">
+                  <div class="course-col is-active">
+                     <div class="course-year">
+                        <div class="course-year__title">
+                           Year 9<span> (Next Year)</span>
+                        </div>
+                        <div class="course-year__subtitle">
+                           1 credit planned
                         </div>
                      </div>
-                     <div class="course-tab__right">
-                        <div class="course-credit course-details__item--light">1cr</div>
-                     </div>
-                  </div>
-                  <div class="course-tab course-tab--active">
-                     <div class="course-tab__left">
-                        <div class="course-name">Functions</div>
-                        <div class="course-details">
-                           <div class="course-details__item">MAT1U1</div>
-                           <div class="course-details__item course-details__item--light">Math 9</div>
+                     <div class="course-tab course-tab--active">
+                        <div class="course-tab__left">
+                           <div class="course-name">English</div>
+                           <div class="course-details">
+                              <div class="course-details__item">ENG1PI</div>
+                              <div class="course-details__item course-details__item--light">English 9</div>
+                           </div>
+                        </div>
+                        <div class="course-tab__right">
+                           <div class="course-credit course-details__item--light">1cr</div>
                         </div>
                      </div>
-                     <div class="course-tab__right">
-                        <div class="course-credit course-details__item--light">1cr</div>
-                     </div>
-                  </div>
-                  <div class="course-tab">
-                     <div class="course-tab__icon-container"><i class="fa fa-plus"></i></div>
-                     <div class="course-tab__left">
-                        <div class="course-name course-details__item--select">Add Science 9</div>
-                        <div class="course-details">
-                           <div class="course-details__item course-details__item--light">1 cr.</div>
+                     <div class="course-tab course-tab--active">
+                        <div class="course-tab__left">
+                           <div class="course-name">Functions</div>
+                           <div class="course-details">
+                              <div class="course-details__item">MAT1U1</div>
+                              <div class="course-details__item course-details__item--light">Math 9</div>
+                           </div>
+                        </div>
+                        <div class="course-tab__right">
+                           <div class="course-icon">
+                             <i class="fa fa-exclamation"></i>
+                             <div class="course-icon__popup">
+                               <div class="course-icon__popup--error">
+                               </div>
+                               <span>This course requires a prerequisite</span>
+                               <a href="#" class="course-icon__popup-link">Add one.</a>
+                             </div>
+                           </div>
+                           <div class="course-credit course-details__item--light">1cr</div>
                         </div>
                      </div>
-                  </div>
-                  <div class="course-tab">
-                     <div class="course-tab__icon-container"><i class="fa fa-plus"></i></div>
-                     <div class="course-tab__left">
-                        <div class="course-name course-details__item--select">Add Geography</div>
-                        <div class="course-details">
-                           <div class="course-details__item course-details__item--light">1 cr.</div>
+                     <div class="course-tab">
+                        <div class="course-tab__icon-container"><i class="fa fa-plus"></i></div>
+                        <div class="course-tab__left">
+                           <div class="course-name course-details__item--select">Add Science 9</div>
+                           <div class="course-details">
+                              <div class="course-details__item course-details__item--light">1 cr.</div>
+                           </div>
                         </div>
                      </div>
-                  </div>
-                  <div class="course-tab">
-                     <div class="course-tab__icon-container"><i class="fa fa-plus"></i></div>
-                     <div class="course-tab__left">
-                        <div class="course-name course-details__item--select">Add French</div>
-                        <div class="course-details">
-                           <div class="course-details__item course-details__item--light">1 cr.</div>
+                     <div class="course-tab">
+                        <div class="course-tab__icon-container"><i class="fa fa-plus"></i></div>
+                        <div class="course-tab__left">
+                           <div class="course-name course-details__item--select">Add Geography</div>
+                           <div class="course-details">
+                              <div class="course-details__item course-details__item--light">1 cr.</div>
+                           </div>
                         </div>
                      </div>
-                  </div>
-                  <div class="course-tab">
-                     <div class="course-tab__icon-container"><i class="fa fa-plus"></i></div>
-                     <div class="course-tab__left">
-                        <div class="course-name course-details__item--select">Add Elective</div>
-                        <div class="course-details">
-                           <div class="course-details__item course-details__item--light">16 Credits Remaining</div>
+                     <div class="course-tab">
+                        <div class="course-tab__icon-container"><i class="fa fa-plus"></i></div>
+                        <div class="course-tab__left">
+                           <div class="course-name course-details__item--select">Add French</div>
+                           <div class="course-details">
+                              <div class="course-details__item course-details__item--light">1 cr.</div>
+                           </div>
                         </div>
                      </div>
+                     <div class="course-tab">
+                        <div class="course-tab__icon-container"><i class="fa fa-plus"></i></div>
+                        <div class="course-tab__left">
+                           <div class="course-name course-details__item--select">Add Elective</div>
+                           <div class="course-details">
+                              <div class="course-details__item course-details__item--light">16 Credits Remaining</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab__footer text-center">
+                        <button class="button btn-submit">Ready To Submit</button>
+                     </div>
                   </div>
-                  <div class="course-tab course-tab--empty">Available Slot</div>
-                  <div class="course-tab course-tab--empty">Available Slot</div>
+               </div>
+               <div class="col-sm-12 col-md-3">
+                  <div class="course-col">
+                     <div class="course-year">
+                        <div class="course-year__title">
+                           Year 10
+                        </div>
+                        <div class="course-year__subtitle">
+                           0 credits earned
+                        </div>
+                     </div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab__footer text-center">
+                        <button class="button btn-submit">Ready To Submit</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-12 col-md-3">
+                  <div class="course-col">
+                     <div class="course-year">
+                        <div class="course-year__title">
+                           Year 11
+                        </div>
+                        <div class="course-year__subtitle">
+                           0 credits earned
+                        </div>
+                     </div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab__footer text-center">
+                        <button class="button btn-submit">Ready To Submit</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-12 col-md-3">
+                  <div class="course-col">
+                     <div class="course-year">
+                        <div class="course-year__title">
+                           Year 12
+                        </div>
+                        <div class="course-year__subtitle">
+                           0 credits earned
+                        </div>
+                     </div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab course-tab--empty">Available Slot</div>
+                     <div class="course-tab__footer text-center">
+                        <button class="button btn-submit">Ready To Submit</button>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>

@@ -71,7 +71,7 @@
 		appearance: none;
 		border: 1px solid $color-gray-secondary;
 		border-radius: $radius-1;
-		color: #7f7f7f;
+		color: $color-gray-alt;
 		cursor: pointer;
 
 		&::-ms-expand {

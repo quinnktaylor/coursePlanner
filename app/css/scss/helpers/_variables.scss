@@ -8,6 +8,8 @@ $font-size-base: 16px;
 
 $body-text-xs-sm: 0.60rem; //10px
 $body-text-sm: 0.75rem; //12px
+$body-text-lrg: 1.45rem; //23px
+
 
 //Font Properties
 $bold: 900;
@@ -21,13 +23,15 @@ $body-color: #fafafa;
 $text-color-primary: #484848;
 $color-blue-primary: #31b0dd;
 $color-blue-secondary: #137cad;
-$color-green-primary: #84c131;
+$color-green-primary: #83c131;
 $color-green-secondary: #46811b;
 $color-highlight-primary: #d03b5b;
 $color-white: #fff;
 $color-gray-primary: #f1f1f1;
 $color-gray-secondary: #cccccc;
-$color-gray-alt: #868686;
+$color-gray-alt: #737373;
+
+$link-color: #77b6d2;
 
 $text-disabled: #afafaf;
 $color-error: #fc476e;
@@ -41,12 +45,6 @@ $spacer: 1rem;
 $tablet: 1024px;
 $mobile: 768px;
 
-//Widths
-$w25: 25%;
-$w50: 50%;
-$w75: 75%;
-$w100: 100%;
-
 //Filter Variables
 $filter-height: 2.8rem;
 $filter-spacing-left: 1.75rem;
@@ -56,6 +54,5 @@ $filter-spacing-small: 1.25rem;
 $checkbox-dimensions: 1.25rem;
 
 //borders
-
 $radius-1: 5px;
-$radius-2: $radius-1 * 1.5;
+$radius-2: 4px;

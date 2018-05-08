@@ -3,16 +3,9 @@ body {
 	font-size: $font-size-base;
 	color: $text-color-primary;
 	background-color: $body-color;
-	padding: $body-padding;
+	padding: 35px;
 }
 
-h1 {
-	font-weight: $bold;
-}
-
-h3 {
-	font-weight: $bold;
-}
 
 .checkbox-primary {
 	.custom-control-label {
