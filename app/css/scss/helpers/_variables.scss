@@ -1,25 +1,20 @@
+//Font Imports
+$font-primary: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
 // Font Base
 $font-size-base: 16px;
 
 // Font Sizing
 
-$body-text-xs-sm: 0.75rem;
-$body-text-sm: 1rem;
-$body-text-md: 1.25rem;
-$body-text-lrg: 1.75rem;
+$body-text-xs-sm: 0.60rem; //10px
+$body-text-sm: 0.75rem; //12px
+$body-text-lrg: 1.45rem; //23px
 
-//Font Imports
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900');
-$font-primary: 'Open Sans', sans-serif;
 
 //Font Properties
 $bold: 900;
-$medium: 700;
-$light: 400;
-
-// Spacing
-$body-padding: 3rem 0;
-$spacer: 1rem;
+$medium: 600;
+$light: 300;
 
 // Colors
 
@@ -28,32 +23,27 @@ $body-color: #fafafa;
 $text-color-primary: #484848;
 $color-blue-primary: #31b0dd;
 $color-blue-secondary: #137cad;
-$color-green-primary: #84c131;
+$color-green-primary: #83c131;
 $color-green-secondary: #46811b;
 $color-highlight-primary: #d03b5b;
 $color-white: #fff;
 $color-gray-primary: #f1f1f1;
 $color-gray-secondary: #cccccc;
-$color-gray-alt: #7e7e7e;
+$color-gray-alt: #737373;
+
+$link-color: #77b6d2;
 
 $text-disabled: #afafaf;
 $color-error: #fc476e;
 $color-error-border: #812338;
 
+// Spacing
+$body-padding: 3rem 0;
+$spacer: 1rem;
 
-/* Media queries - Mobile First Example
-  @media (min-width: tablet) {
-    float: left;
-    width: 60%;
-  } */
+//Media Query Breakpoints - Min Width ^
 $tablet: 1024px;
 $mobile: 768px;
-
-//Widths
-$w25: 25%;
-$w50: 50%;
-$w75: 75%;
-$w100: 100%;
 
 //Filter Variables
 $filter-height: 2.8rem;
@@ -64,6 +54,5 @@ $filter-spacing-small: 1.25rem;
 $checkbox-dimensions: 1.25rem;
 
 //borders
-
-$radius-1: 4px;
-$radius-2: $radius-1 * 1.5;
+$radius-1: 5px;
+$radius-2: 4px;

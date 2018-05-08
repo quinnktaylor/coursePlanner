@@ -1,16 +1,77 @@
-.course-header {
-	display: block;
+/* ----------- */
+
+/* Page header */
+
+/* ----------- */
+.page-header {
+	align-items: center;
+	display: flex;
+	margin-bottom: 20px;
+
+	&__h1 {
+		color: $text-color-primary;
+		font-size: $body-text-lrg;
+		font-weight: $medium;
+		margin-bottom: 0;
+		margin-right: 22px;
+	}
 }
 
-.course-header-text {
-	font-size: $body-text-sm - .10rem;
-	font-weight: $light;
-	display: inline-block;
-	margin-top: 5px;
+.credits {
+	align-items: center;
+	display: flex;
 
-	&.alt {
-		margin-top: 8px;
-		display: block;
-		text-align: right;
+	&__count {
+		font-size: $body-text-xs-sm;
+		background: $color-highlight-primary;
+		border-radius: 100%;
+		color: $color-white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 5px;
+		width: 22px;
+		height: 22px;
+	}
+
+	&__label {
+		color: $color-gray-alt;
+		font-size: $body-text-sm;
+	}
+
+}
+.progression {
+	align-items: center;
+	display: flex;
+	margin-left: auto;
+
+	&__bar {
+		border: 2px solid #e1e1e1;
+		border-radius: 4px;
+		height: 26px;
+		position: relative;
+		width: 200px;
+		&__fill {
+			background: $color-green-primary;
+			border-bottom-left-radius: 2px;
+			border-top-left-radius: 2px;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 50%;
+			&--full {
+				border-radius: 2px;
+			}
+		}
+	}
+
+	&__status {
+		font-size: $body-text-sm;
+		margin-left: 10px;
+		&--remaining {
+			color: $color-green-primary;
+			font-weight: bold;
+		}
 	}
 }
