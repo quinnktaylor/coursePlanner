@@ -1,13 +1,11 @@
 // Helpers
 @import 'helpers/_variables';
-@import 'helpers/_utils';
 
 // Base
 @import 'base/_reset';
 @import 'base/_global';
 
 // Component
-@import 'component/_progress';
 @import 'component/_header';
 @import 'component/_filter';
 @import 'component/_course_selection';

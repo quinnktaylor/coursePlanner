@@ -1,16 +1,79 @@
-.course-header {
-	display: block;
+/* ----------- */
+/* Page header */
+/* ----------- */
+
+.page-header {
+  display: flex;
+  align-items: center;
+	margin-bottom: 20px;
 }
 
-.course-header-text {
-	font-size: $body-text-sm - .10rem;
-	font-weight: $light;
-	display: inline-block;
-	margin-top: 5px;
+.page-header__h1 {
+  font-size: 23px;
+  font-weight: 600;
+  color: #484848;
+  margin-right: 22px;
+	margin-bottom: 0;
+}
 
-	&.alt {
-		margin-top: 8px;
-		display: block;
-		text-align: right;
-	}
+.credits {
+  display: flex;
+  align-items: center;
+}
+
+.credits__count {
+  width: 22px;
+  height: 22px;
+  background: #d03b5b;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.credits__label {
+  font-size: 13px;
+  color: #737373;
+}
+
+.progression {
+  margin-left: auto;
+  display: flex;
+	align-items: center;
+}
+
+.progression__bar {
+  border: 2px solid #e1e1e1;
+  width: 200px;
+  height: 26px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.progression__bar__fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #83c131;
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.progression__bar__fill--full {
+  border-radius: 2px;
+}
+
+.progression__status {
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.progression__status--remaining {
+	color: #83c131;
+	font-weight: bold;
 }

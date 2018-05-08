@@ -2,27 +2,48 @@
 	background: $color-gray-primary;
 	border: 1px solid $color-gray-secondary;
 	border-radius: $radius-1;
-	padding: 0rem $filter-spacing-small;
-	min-height: $filter-height; //Will keep height consistent at 45px in the event that dropdown is ever removed.
-}
-
-.course-filter-text {
+	padding: 0.50rem $filter-spacing-small;
+	font-size: $body-text-sm;
 	color: $color-gray-alt;
-	font-size: $body-text-sm - .10rem;
-}
 
-.course-filter-dropdown {
-	min-height: $filter-height;
-	@extend .flex-vertical-center;
-	padding-right: 1.75rem;
+	.d-flex {
+		flex-wrap: wrap;
+		@media (min-width: $mobile) {
+			flex-wrap: nowrap;
+		}
+	}
 
-	.dropdown {
+	&__dropdown {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: left;
+		    -ms-flex-pack: left;
+		        justify-content: left;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	&__dropdown-container {
 		margin-left: $filter-spacing-small;
 		width: 100%;
 		display: block;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-  	justify-content: center;
-  	align-items: center;
+  	-webkit-box-pack: center;
+  	    -ms-flex-pack: center;
+  	        justify-content: center;
+  	-webkit-box-align: center;
+  	    -ms-flex-align: center;
+  	        align-items: center;
+		position: relative;
+
+		@media (min-width: $mobile) {
+			max-width: 270px;
+		}
+
 		//Based off CSS Chevrons by Jonathan Neal
 		&:after {
 			content: '';
@@ -34,51 +55,62 @@
 			right: 15px;
 			width: 0.45em;
 			height: 0.45em;
-			transform: rotate(135deg);
+			-webkit-transform: rotate(135deg);
+			    -ms-transform: rotate(135deg);
+			        transform: rotate(135deg);
 			pointer-events: none;
+		}
+	}
+
+	select {
+		display: block;
+		min-width: 270px;
+		padding: .25rem 1.25rem .25rem .50rem;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: 1px solid $color-gray-secondary;
+		border-radius: $radius-1;
+		color: #7f7f7f;
+		cursor: pointer;
+
+		&::-ms-expand {
+	    display: none; /* hide the default arrow in ie10 and ie11 */
 		}
 	}
 }
 
-.dropdown-container {
-	display: block;
-	width: 100%;
-	padding: .25rem 1.25rem .25rem .50rem;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	@extend .course-filter-text;
-	border: 1px solid $color-gray-secondary;
-	border-radius: $radius-1;
-	cursor: pointer;
-
-	&::-ms-expand {
-    display: none; /* hide the default arrow in ie10 and ie11 */
-	}
-}
-
-.course-filter-options {
-	padding-left: 1.75rem;
-	@extend .flex-vertical-center;
+.course-filter__options {
 	border-left: 1px solid $color-gray-secondary;
-	margin: 0.75rem 0;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-left: 1.25rem;
+	padding-left: 1.25rem;
 }
 
-.course-filter-list {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: $filter-spacing-left;
-	padding-left: 0;
+.course-filter__options-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 0;
+	padding-left: 0;
 }
 
-.course-filter-list-item {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: $filter-spacing-small;
-	@extend .course-filter-text;
+.course-filter__options-list-item {
+	list-style-type: none;
+	margin-left: 1.25rem;
 
-	&:first-of-type {
-		margin-left: 0;
+	.custom-control {
+		//Centers label to checkbox
+		display: flex;
+  	-webkit-box-pack: center;
+  	    -ms-flex-pack: center;
+  	        justify-content: center;
+  	-webkit-box-orient: vertical;
+  	-webkit-box-direction: normal;
+  	    -ms-flex-direction: column;
+  	        flex-direction: column;
 	}
 }
